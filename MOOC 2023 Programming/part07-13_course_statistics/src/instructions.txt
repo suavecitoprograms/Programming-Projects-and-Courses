@@ -1,0 +1,76 @@
+Retrieving the data for a single course
+
+Each course also has its own URL, where more specific
+weekly data about the course is available. The URLs 
+follow the format 
+https://studies.cs.helsinki.fi/stats-mock/api/courses/****/stats, 
+where you would replace the stars with the contents of 
+the field name for the course you want to access.
+
+For example, the data for the course docker2019 is at 
+the address 
+https://studies.cs.helsinki.fi/stats-mock/api/courses/docker2019/stats.
+
+Please write a function named retrieve_course(course_name: str),
+ which returns statistics for the specified course, in dictionary 
+ format.
+
+For example, the function call retrieve_course("docker2019") 
+would return a dictionary with the following contents:
+
+Sample output
+{
+    'weeks': 4,
+    'students': 220,
+    'hours': 5966,
+    'hours_average': 27,
+    'exercises': 4988,
+    'exercises_average': 22
+}
+The values in the dictionary are determined as follows:
+
+weeks: the number of JSON object literals retrieved
+
+students: the maximum number of students in all the weeks
+
+hours: the sum of all hour_total values in the different weeks
+
+hours_average: the hours value divided by the students value (rounded down to the closest integer value)
+
+exercises: the sum of all exercise_total values in the different weeks
+
+exercises_average: the exercises value divided by the students value (rounded down to the closest integer value)
+
+NB: See the notices in Part 1 of the exercise, as they apply here, too.
+
+NB2: The Python math module has a useful function for rounding down integers.
+
+{"0":
+    {"students":220,
+    "hour_total":286,
+    "exercise_total":218,
+    "hours":[null,176,11,3,1,1,null,null,6]},
+
+"1":{"students":176,
+    "hour_total":2421,
+    "exercise_total":2748,
+    "hours":[null,6,3,3,4,9,5,8,13,4,28,1,14,2,3,20,2,4,3,null,15,1,1,null,6,5,null,1,2,null,8,null,null,null,null,1,null,null,null,null,2,2]},
+
+CourseStatisticsPart1Test: test1_function_retrieve_all_exists
+The list which function call retrieve_all() 
+returns is expected to contain tuples which consists of four items. 
+Now calling function returned value 
+[
+('Full Stack Open 2020', 'ofs2019', 201), 
+('DevOps with Docker 2019', 'docker2019', 36), 
+('DevOps with Docker 2020', 'docker2020', 36), 
+('Beta DevOps with Kubernetes', 'beta-dwk-20', 28)
+]
+
+Sample output
+[
+    ('Full Stack Open 2020', 'ofs2019', 2020, 201),
+    ('DevOps with Docker 2019', 'docker2019', 2019, 36),
+    ('DevOps with Docker 2020', 'docker2020', 2020, 36),
+    ('Beta DevOps with Kubernetes', 'beta-dwk-20', 2020, 28)
+]

@@ -1,0 +1,3 @@
+laukku;bag
+tieto;knowledge
+tietoisuus;conscience

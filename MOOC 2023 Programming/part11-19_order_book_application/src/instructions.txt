@@ -1,0 +1,100 @@
+Part 1
+    Without error handling
+
+    The application should work exactly as follows:
+
+    Sample output
+    commands:
+    0 exit
+    1 add order
+    2 list finished tasks
+    3 list unfinished tasks
+    4 mark task as finished
+    5 programmers
+    6 status of programmer
+
+    command: 1
+    description: program the next facebook
+    programmer and workload estimate: jonah 1000
+    added!
+
+    command: 1
+    description: program mobile app for workload accounting
+    programmer and workload estimate: eric 25
+    added!
+
+    command: 1
+    description: program an app for music theory revision
+    programmer and workload estimate: nina 12
+    added!
+
+    command: 1
+    description: program the next twitter
+    programmer and workload estimate: jonah 55
+    added!
+
+    command: 2
+    no finished tasks
+
+    command: 3
+    1: program the next facebook (1000 hours), programmer jonah NOT FINISHED
+    2: program mobile app for workload accounting (25 hours), programmer eric NOT FINISHED
+    3: program an app for music theory revision (12 hours), programmer nina NOT FINISHED
+    4: program the next twitter (55 hours), programmer jonah NOT FINISHED
+
+    command: 4
+    id: 2
+    marked as finished
+
+    command: 4
+    id: 4
+    marked as finished
+
+    command: 2
+    2: program mobile app for workload accounting (25 hours), programmer eric FINISHED
+    4: program the next twitter (55 hours), programmer jonah FINISHED
+
+    command: 3
+    1: program the next facebook (1000 hours), programmer jonah NOT FINISHED
+    3: program an app for music theory revision (12 hours), programmer nina NOT FINISHED
+
+    command: 5
+    jonah
+    eric
+    nina
+
+    command: 6
+    programmer: jonah
+    tasks: finished 2 not finished 1, hours: done 55 scheduled 1000
+    The first exercise point is granted for a working application when all user input is flawless.
+
+
+
+    The first exercise point is granted for a working application when all user input is flawless.
+
+    Handling errors in user input
+
+    To gain the second exercise point for this exercise your application is expected to recover from erroneus user input. Any input which does not follow the specified format should produce an error message erroneous input, and result in yet another repeat of the loop asking for a new command:
+
+    Sample output
+    command: 1
+    description: program mobile app for workload accounting
+    programmer and workload estimate: eric xxx
+    erroneous input
+
+    command: 1
+    description: program mobile app for workload accounting
+    programmer and workload estimate: eric
+    erroneous input
+
+    command: 4
+    id: 1000000
+    erroneous input
+
+    command: 4
+    id: XXXX
+    erroneous input
+
+    command: 6
+    programmer: unknownprogrammer
+    erroneous input

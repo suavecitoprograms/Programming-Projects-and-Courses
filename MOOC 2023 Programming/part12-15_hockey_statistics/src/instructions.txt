@@ -1,0 +1,26 @@
+"""
+    rationale:
+    create 3 classes: Player, PlayerDatabase, HockeyStatisticsApplication
+    Player should contain the following data attributes and should all be encapsulated and can't be manipulated:
+      "name": "Travis Zajac",
+      "nationality": "CAN",
+      "assists": 16,
+      "goals": 9,
+      "penalties": 28,
+      "team": "NJD",
+      "games": 69
+      
+    PlayerDatabase is a database that includes objects of type Player.
+    It should have the following functionalities:
+        - player search
+        - teams
+        - countries
+        - players in teams
+        - players from country
+        - most points
+        - most goals
+    
+    HockeyStatisticsApplication should be the only place where we handle user input.
+    Once this is called we should instantly load all existing information from filename and import them as Players and into the PlayersDatabase
+        - utilize "try-except" blocks when handling user inputs
+"""
