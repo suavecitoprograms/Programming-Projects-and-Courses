@@ -7,3 +7,5 @@ MOOC.FI (Massive Open Online Course)
   1. Python Programming MOOC 2023 - https://programming-23.mooc.fi
   2. Data Structures and Algorithms 2024 spring - https://tira.mooc.fi/spring-2024/
 
+LeetCode Profile:
+- https://leetcode.com/u/gjamescameron/
