@@ -9,3 +9,6 @@ MOOC.FI (Massive Open Online Course)
 
 LeetCode Profile:
 - https://leetcode.com/u/gjamescameron/
+
+Programming Portfolio:
+- https://foregoing-steel-7bb.notion.site/Programming-Portfolio-1a6fb8d9544f80d3bc2ccef15417f517?pvs=4
