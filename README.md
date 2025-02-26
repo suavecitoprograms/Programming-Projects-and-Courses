@@ -1,5 +1,5 @@
-# Projects-and-Courses
-a collection of personal projects and courses
+# Programming-Projects-and-Courses
+a collection of personal programming projects and courses
 
 MOOC.FI (Massive Open Online Course)
   are courses that are hosted by University of Helsinki MOOC Center.
